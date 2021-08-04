@@ -12,6 +12,7 @@ def a(request):
 		t = test(fname=fname,lname=lname)
 		t.save()
 		return render (request,'abc.html',context={"data":test.objects.all()})
-	return render (request,'abc.html',context={"data":test.objects.all()})
+	else:
+		return render (request,'abc.html',context={"data":test.objects.all()})
 
 	
