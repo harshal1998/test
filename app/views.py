@@ -11,7 +11,7 @@ def a(request):
 		print(fname,lname)
 		t = test(fname=fname,lname=lname)
 		t.save()
-		return render (request,'abc.html')
-	return render (request,'abc.html')
+		return render (request,'abc.html',context={"data":test.objects.all()})
+	return render (request,'abc.html',context={"data":test.objects.all()})
 
 	
