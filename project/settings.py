@@ -84,15 +84,13 @@ DATABASES = {
         # 'PASSWORD': 'root',
         # 'HOST': '127.0.0.1',
         # 'PORT': '5432',
-
         'NAME': 'd3ov72sqqj79m6',
         'USER': 'ahyvgjbhbiwrxf',
-        'PASSWORD' : 'root'
+        'PASSWORD' : 'root',
         # 'PASSWORD': '9696e54b04b0f866a1df1ab9ab97fdb88c49114f8e5bcd3fe9e5fb8f27bf2498',
         'HOST': '0.tcp.ngrok.io',
         # 'HOST': 'ec2-54-196-65-186.compute-1.amazonaws.com',
-        'PORT':'16454'
-        
+        'PORT':'16454',
     }
 }
 
