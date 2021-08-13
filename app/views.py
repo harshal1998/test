@@ -1,5 +1,5 @@
 from django.http.response import HttpResponseRedirect
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect, render_to_response
 from django.http import HttpResponse,HttpResponseRedirect
 from .models import test
 
@@ -14,7 +14,7 @@ def home(request):
 		print(fname,lname)
 		t = test(fname=fname,lname=lname)
 		t.save()
-		return HttpResponseRedirect ('/')
+		return render_to_response (request,'abc.html',context={"data":data})
 	else:
 		print("b")
 		return render (request,'abc.html',context={"data":data})
