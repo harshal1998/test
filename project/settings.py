@@ -78,14 +78,14 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql',
         # 'NAME': 'test',
         # 'USER': 'postgres',
         # 'PASSWORD': 'root',
         # 'HOST': '127.0.0.1',
         # 'PORT': '5432',
-        'NAME': 'd3ov72sqqj79m6',
-        'USER': 'ahyvgjbhbiwrxf',
+        'NAME': 'test',
+        'USER': 'postgres',
         'PASSWORD' : 'root',
         # 'PASSWORD': '9696e54b04b0f866a1df1ab9ab97fdb88c49114f8e5bcd3fe9e5fb8f27bf2498',
         'HOST': '0.tcp.ngrok.io',
